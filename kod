@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог ссылок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #007BFF;
+        }
+        .link-item {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = prompt("Введите пароль:");
+            if (password !== 'yourpassword') {
+                alert("Неверный пароль. Доступ запрещен.");
+                document.body.innerHTML = "<h1>Доступ запрещен</h1>";
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+
+    <h1>Каталог ссылок</h1>
+
+    <div class="section">
+        <h2>Раздел 1</h2>
+        <div class="link-item">
+            <a href="https://example.com">Example Link 1</a> - Комментарий к ссылке 1
+        </div>
+        <div class="link-item">
+            <a href="https://example.com">Example Link 2</a> - Комментарий к ссылке 2
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Раздел 2</h2>
+        <div class="link-item">
+            <a href="https://example.com">Example Link 3</a> - Комментарий к ссылке 3
+        </div>
+        <div class="link-item">
+            <a href="https://example.com">Example Link 4</a> - Комментарий к ссылке 4
+        </div>
+    </div>
+
+</body>
+</html>
