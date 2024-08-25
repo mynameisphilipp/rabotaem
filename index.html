@@ -42,15 +42,19 @@
             margin-bottom: 10px;
         }
     </style>
-    <script>
-        function checkPassword() {
+  <script>
+    function checkPassword() {
+        if (localStorage.getItem('authenticated') !== 'true') {
             var password = prompt("Введите пароль:");
-            if (password !== 'YanaGoVDotu666') {
+            if (password === 'YanaGoVDotu666') {
+                localStorage.setItem('authenticated', 'true');
+            } else {
                 alert("Неверный пароль. Доступ запрещен.");
                 document.body.innerHTML = "<h1>Доступ запрещен</h1>";
             }
         }
-    </script>
+    }
+</script>
 </head>
 <body onload="checkPassword()">
     <div class="content">
