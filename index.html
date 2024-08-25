@@ -9,12 +9,28 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            display: flex;
         }
         h1 {
             text-align: center;
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            width: 100%;
+        }
+        .catalog {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .notes {
+            flex: 1;
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
         }
         .section {
             margin-bottom: 30px;
@@ -29,7 +45,7 @@
     <script>
         function checkPassword() {
             var password = prompt("Введите пароль:");
-            if (password !== 'yourpassword333555') {
+            if (password !== 'YanaGoVDotu666') {
                 alert("Неверный пароль. Доступ запрещен.");
                 document.body.innerHTML = "<h1>Доступ запрещен</h1>";
             }
@@ -40,23 +56,30 @@
 
     <h1>Каталог ссылок</h1>
 
-    <div class="section">
-        <h2>Раздел 1</h2>
-        <div class="link-item">
-            <a href="https://example.com">Example Link 1</a> - Комментарий к ссылке 1
+    <div class="content">
+        <div class="catalog">
+            <div class="section">
+                <h2>Раздел 1</h2>
+                <div class="link-item">
+                    <a href="https://example.com">Example Link 1</a> - Комментарий к ссылке 1
+                </div>
+                <div class="link-item">
+                    <a href="https://example.com">Example Link 2</a> - Комментарий к ссылке 2
+                </div>
+            </div>
+            <div class="section">
+                <h2>Раздел 2</h2>
+                <div class="link-item">
+                    <a href="https://example.com">Example Link 3</a> - Комментарий к ссылке 3
+                </div>
+                <div class="link-item">
+                    <a href="https://example.com">Example Link 4</a> - Комментарий к ссылке 4
+                </div>
+            </div>
         </div>
-        <div class="link-item">
-            <a href="https://example.com">Example Link 2</a> - Комментарий к ссылке 2
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Раздел 2</h2>
-        <div class="link-item">
-            <a href="https://example.com">Example Link 3</a> - Комментарий к ссылке 3
-        </div>
-        <div class="link-item">
-            <a href="https://example.com">Example Link 4</a> - Комментарий к ссылке 4
+        <div class="notes">
+            <h2>Заметки</h2>
+            <p>Здесь можно оставить свои заметки или дополнительную информацию по ссылкам.</p>
         </div>
     </div>
 
