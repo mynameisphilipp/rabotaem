@@ -29,7 +29,7 @@
     <script>
         function checkPassword() {
             var password = prompt("Введите пароль:");
-            if (password !== 'yourpassword') {
+            if (password !== 'yourpassword333555') {
                 alert("Неверный пароль. Доступ запрещен.");
                 document.body.innerHTML = "<h1>Доступ запрещен</h1>";
             }
